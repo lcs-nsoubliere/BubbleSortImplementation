@@ -36,17 +36,22 @@ for i in 0..<dataSet.count {
     for j in 0..<dataSet.count - 1 {
         
         
+        
         //compare left value to right value
+        print ("comparison \(j + 1)...", terminator: "")
         if dataSet[j] > dataSet[j+1] {
             //swap values when left value is more then right value
             let temporaryValue = dataSet[j] // Set aside the left value
             dataSet[j] = dataSet[j + 1] // replace left with rigth
             dataSet[j + 1] = temporaryValue //replace the right with temporary value
+            print(" values were swapped,", terminator: "")
         }
+        print("")
+
     }
 
     //print the array after the pass
-    print("Array after pass")
+    print("Array after pass \(i + 1):")
     print(dataSet)
     waitForUserInput()
 }
