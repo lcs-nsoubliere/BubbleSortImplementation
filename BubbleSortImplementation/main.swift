@@ -9,7 +9,7 @@ import Foundation
 
 func waitForUserInput() {
     print("")
-    print("Press Return To Continue...")
+    print("Press Return To Organize The Numbers")
     //Waits for input from the user then discards it
     _ = readLine()
 }
@@ -53,7 +53,7 @@ for i in 0..<dataSet.count {
     //print the array after the pass
     print("Array after pass \(i + 1):")
     print(dataSet)
-    waitForUserInput()
+   // waitForUserInput()
 }
     
     
