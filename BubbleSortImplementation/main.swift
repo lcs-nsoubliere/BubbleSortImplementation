@@ -18,17 +18,17 @@ func waitForUserInput() {
 var dataSet: [Int] = []
 
 //Populate the list
-dataSet.append(10)
-dataSet.append(11)
-dataSet.append(12)
-dataSet.append(13)
-dataSet.append(14)
-dataSet.append(15)
-dataSet.append(16)
-dataSet.append(17)
-dataSet.append(18)
-dataSet.append(19)
 dataSet.append(20)
+dataSet.append(19)
+dataSet.append(18)
+dataSet.append(17)
+dataSet.append(16)
+dataSet.append(15)
+dataSet.append(14)
+dataSet.append(13)
+dataSet.append(12)
+dataSet.append(11)
+dataSet.append(10)
 //for _ in 1...10 {
 //    dataSet.append(Int.random(in: 1...10000))
 //}
@@ -70,6 +70,8 @@ for i in 0..<dataSet.count {
     print("Array after pass \(i + 1):")
     print(dataSet)
     //waitForUserInput()
+    
+    print("")
     
     //When no swaps occured, stop the outer loop
     if swapped == false {
