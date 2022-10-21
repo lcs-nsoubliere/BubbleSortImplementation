@@ -10,8 +10,8 @@ import Foundation
 func waitForUserInput() {
     print("")
     print("Press Return To Organize The Numbers")
-    //Waits for input from the user then discards it
-    _ = readLine()
+//    //Waits for input from the user then discards it
+//    _ = readLine()
 }
 
 //Create an empty list (array)
@@ -38,6 +38,12 @@ dataSet.append(10)
 print("Unsorted")
 print(dataSet)
 waitForUserInput()
+
+//Keep track of the start time (epoch)
+//when this tline of code runs, startTime contains the amount of seconds from jan 1st 1970
+let startTime = Date().timeIntervalSince1970
+print("Starting sort...", terminator: "")
+
 
 //loop through the arrray "n" times
 //(how many elements are in the array)
@@ -79,4 +85,10 @@ for i in 0..<dataSet.count {
     }
 }
     
-    
+   //get end time
+let endTime = Date().timeIntervalSince1970
+
+//get the elapsed time
+let elapsedTime = endTime - startTime
+print("Sort took \(elapsedTime) secounds.")
+
